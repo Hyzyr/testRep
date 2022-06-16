@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: rgba(30, 60, 90);
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #eee;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      padding: 100px 0;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width: 350px;
+      height: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 10px solid rgba(200, 200, 200, 0.2);
+    }
+    .borderBox {
+      box-sizing: border-box;
+    }
+    .contentBox {
+      box-sizing: content-box;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="item borderBox">item 1</div>
+      <div class="item contentBox">item 2</div>
+    </div>
+  </body>
+</html>
